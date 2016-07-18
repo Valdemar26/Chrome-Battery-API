@@ -1,0 +1,18 @@
+// manifest.json is mandatory file in Chrome extension
+{
+  "manifest_version": 2, // standart edition of manifest
+  "name": "battery-monitor",
+  "version": "0.0.1",
+  "icons": {
+    "32": "./icons/32x32.png",
+    "48": "./icons/48x48.png"
+  },
+  "background": {
+    "scripts": ["background.js"] // script that runs when you start the browser
+  },
+  "browser_action": {
+    "default_title": "open battery monitor",
+    "default_icon": "./icons/48x48.png", // main icon
+    "default_popup": "./main/index.html"
+  }
+}
